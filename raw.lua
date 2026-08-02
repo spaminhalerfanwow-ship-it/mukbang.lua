@@ -2348,18 +2348,16 @@ MiscTab:CreateButton({
 })
 
 local Toggle = MiscTab:CreateToggle({
-    Name = "Auto Order Fried Chicken",
+    Name = "Make the whole server lag",
     CurrentValue = false,
-    Flag = "Toggle1",
+    Flag = "FriedChickenToggle1",
     Callback = function(Value)
-        -- The function that takes place when the toggle is pressed
-        -- The variable (Value) is a boolean on whether the toggle is true or false
         if Value then
             task.spawn(function()
                 local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
                 while Value do
                     Event:FireServer({ "Fried Chicken" })
-                    task.wait(0.1) -- Delay between fires (0.1 = 10 times a second). Lower to go faster, higher to go slower.
+                    task.wait(0.0)
                 end
             end)
         end

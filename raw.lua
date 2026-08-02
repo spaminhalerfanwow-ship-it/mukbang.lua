@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Mukbang Game Script",
+   Name = "🍔 Mukbang Game Script 🍗",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Mukbang Game Script",
    LoadingSubtitle = "by blue25102558",
@@ -2348,6 +2348,8 @@ MiscTab:CreateButton({
 })
 
 MiscTab:CreateLabel("ROBLOX: blue25102558")
+
+MiscTab:CreateLabel("YouTube: fourisanaverageguy")
 
 Rayfield:Notify({Title = "Infinite bites loaded!", Content = "All tabs + features ready!", Duration = 5})
 

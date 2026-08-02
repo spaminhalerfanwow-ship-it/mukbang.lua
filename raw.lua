@@ -2347,23 +2347,6 @@ MiscTab:CreateButton({
     end
 })
 
-local Toggle = MiscTab:CreateToggle({
-    Name = "Make the whole server lag",
-    CurrentValue = false,
-    Flag = "FriedChickenToggle1",
-    Callback = function(Value)
-        if Value then
-            task.spawn(function()
-                local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
-                while Value do
-                    Event:FireServer({ "Fried Chicken" })
-                    task.wait(0.0)
-                end
-            end)
-        end
-    end,
-})
-
 MiscTab:CreateLabel("ROBLOX: blue25102558")
 
 MiscTab:CreateLabel("YouTube: fourisanaverageguy")

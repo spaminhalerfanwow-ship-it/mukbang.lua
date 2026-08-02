@@ -2347,7 +2347,7 @@ MiscTab:CreateButton({
     end
 })
 
-local Toggle = Tab:CreateToggle({
+local Toggle = MiscTab:CreateToggle({
     Name = "Auto Order Fried Chicken",
     CurrentValue = false,
     Flag = "Toggle1",

@@ -6,7 +6,7 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "Mukbang Game Script",
    LoadingSubtitle = "by blue25102558",
    ShowText = "Rayfield", -- for mobile users to unhide Rayfield, change if you'd like
-   Theme = "Default", -- Check https://[Log in to view URL]
+   Theme = "AmberGlow", -- Check https://[Log in to view URL]
 
    ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
 

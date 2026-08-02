@@ -2347,9 +2347,27 @@ MiscTab:CreateButton({
     end
 })
 
+local Toggle = Tab:CreateToggle({
+    Name = "Auto Order Fried Chicken",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    Callback = function(Value)
+        -- The function that takes place when the toggle is pressed
+        -- The variable (Value) is a boolean on whether the toggle is true or false
+        if Value then
+            task.spawn(function()
+                local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+                while Value do
+                    Event:FireServer({ "Fried Chicken" })
+                    task.wait(0.1) -- Delay between fires (0.1 = 10 times a second). Lower to go faster, higher to go slower.
+                end
+            end)
+        end
+    end,
+})
+
 MiscTab:CreateLabel("ROBLOX: blue25102558")
 
 MiscTab:CreateLabel("YouTube: fourisanaverageguy")
 
 Rayfield:Notify({Title = "Infinite bites loaded!", Content = "All tabs + features ready!", Duration = 5})
-

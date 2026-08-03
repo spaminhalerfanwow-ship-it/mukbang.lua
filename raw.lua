@@ -2315,9 +2315,6 @@ Event:FireServer(
 local MiscTab = Window:CreateTab("❔ Misc", nil) -- Title, Image
 local Section = MiscTab:CreateSection("⭐ Features")
 
-local Section = MiscTab:CreateSection("⭐ All Gamepass Foods")
- 
-
 local infBitesEnabled = false
 local infBitesConnection = nil
 
@@ -2355,6 +2352,8 @@ MiscTab:CreateButton({
         game.StarterGui:SetCore("SendNotification", { Title = "Steps", Text = "Place Food and collect The Food", Duration = 8 })
     end
 })
+
+local Section = MiscTab:CreateSection("⭐ All Gamepass Foods")
 
 local Button = MiscTab:CreateButton({
    Name = "Seafood Boil",

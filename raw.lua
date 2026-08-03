@@ -2315,9 +2315,6 @@ Event:FireServer(
 local MiscTab = Window:CreateTab("❔ Misc", nil) -- Title, Image
 local Section = MiscTab:CreateSection("⭐ Features")
 
-local Section = MiscTab:CreateSection("⭐ All Gamepass Foods")
- 
-
 local infBitesEnabled = false
 local infBitesConnection = nil
 

@@ -2317,6 +2317,45 @@ local Section = MiscTab:CreateSection("⭐ Features")
 
 local Section = MiscTab:CreateSection("⭐ All Gamepass Foods")
  
+
+local infBitesEnabled = false
+local infBitesConnection = nil
+
+MiscTab:CreateToggle({
+    Name = "Infinite Bites",
+    CurrentValue = false,
+    Callback = function(state)
+        infBitesEnabled = state
+        if infBitesConnection then infBitesConnection:Disconnect() infBitesConnection = nil end
+        if state then
+            infBitesConnection = game:GetService("RunService").Heartbeat:Connect(function()
+                if not infBitesEnabled then return end
+                pcall(function()
+                    for i = 1, 3 do
+                        local args = {{ Bite = 1, Noodletype = "Carbonara", Action = "Bite", Tool = game:GetService("Players").LocalPlayer.Character:WaitForChild("Carbonara"), FoodType = "SkilletNoodles" }}
+                        game:GetService("ReplicatedStorage"):WaitForChild("NoodlesSkilletEvent"):FireServer(unpack(args))
+                    end
+                end)
+                task.wait(0.0001)
+            end)
+        end
+    end
+})
+
+MiscTab:CreateButton({
+    Name = "Steps (Teleport + Order)",
+    Callback = function()
+        local plr = game:GetService("Players").LocalPlayer
+        local char = plr.Character or plr.CharacterAdded:Wait()
+        local hrp = char:WaitForChild("HumanoidRootPart")
+        hrp.CFrame = CFrame.new(8.23, 2.72, -3.85)
+        task.wait(1)
+        local args = {{"Carbonara"}}
+        game:GetService("ReplicatedStorage"):WaitForChild("PlaceFoodOrder"):FireServer(unpack(args))
+        game.StarterGui:SetCore("SendNotification", { Title = "Steps", Text = "Place Food and collect The Food", Duration = 8 })
+    end
+})
+
 local Button = MiscTab:CreateButton({
    Name = "Seafood Boil",
    Callback = function()
@@ -2580,44 +2619,6 @@ Event:FireServer(
     }
 )
    end,
-})
-
-local infBitesEnabled = false
-local infBitesConnection = nil
-
-MiscTab:CreateToggle({
-    Name = "Infinite Bites",
-    CurrentValue = false,
-    Callback = function(state)
-        infBitesEnabled = state
-        if infBitesConnection then infBitesConnection:Disconnect() infBitesConnection = nil end
-        if state then
-            infBitesConnection = game:GetService("RunService").Heartbeat:Connect(function()
-                if not infBitesEnabled then return end
-                pcall(function()
-                    for i = 1, 3 do
-                        local args = {{ Bite = 1, Noodletype = "Carbonara", Action = "Bite", Tool = game:GetService("Players").LocalPlayer.Character:WaitForChild("Carbonara"), FoodType = "SkilletNoodles" }}
-                        game:GetService("ReplicatedStorage"):WaitForChild("NoodlesSkilletEvent"):FireServer(unpack(args))
-                    end
-                end)
-                task.wait(0.0001)
-            end)
-        end
-    end
-})
-
-MiscTab:CreateButton({
-    Name = "Steps (Teleport + Order)",
-    Callback = function()
-        local plr = game:GetService("Players").LocalPlayer
-        local char = plr.Character or plr.CharacterAdded:Wait()
-        local hrp = char:WaitForChild("HumanoidRootPart")
-        hrp.CFrame = CFrame.new(8.23, 2.72, -3.85)
-        task.wait(1)
-        local args = {{"Carbonara"}}
-        game:GetService("ReplicatedStorage"):WaitForChild("PlaceFoodOrder"):FireServer(unpack(args))
-        game.StarterGui:SetCore("SendNotification", { Title = "Steps", Text = "Place Food and collect The Food", Duration = 8 })
-    end
 })
 
 MiscTab:CreateLabel("ROBLOX: blue25102558")

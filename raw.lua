@@ -1,8 +1,3 @@
--- hey skidders
--- if you are browsing through the codes and wanted to copy them
--- please ask permission first then you can copy all of them
--- thank you
-
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -2310,7 +2305,6 @@ Event:FireServer(
 )
    end,
 })
-
 
 local MiscTab = Window:CreateTab("❔ Misc", nil) -- Title, Image
 local Section = MiscTab:CreateSection("⭐ Features")

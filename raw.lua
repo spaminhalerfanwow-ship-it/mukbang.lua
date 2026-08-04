@@ -1,7 +1,3 @@
--- hey skidders
--- if you are looking through the codes and wanted to use them
--- please ask permission first then you can use it
--- thank you <3
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -2567,6 +2563,58 @@ local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
 Event:FireServer(
     {
         "Flounder Slab"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Gooey Brownie",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Gooey Brownie"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Gooey Velvet",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Gooey Velvet"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Gooey Dubai",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Gooey Dubai"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Gooey Vanilla",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Gooey Vanilla"
     }
 )
    end,

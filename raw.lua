@@ -2323,7 +2323,7 @@ MiscTab:CreateToggle({
                 if not infBitesEnabled then return end
                 pcall(function()
                     for i = 1, 3 do
-                        local args = {{ Bite = 1, Noodletype = "Carbonara", Action = "Bite", Tool = game:GetService("Players").LocalPlayer.Character:WaitForChild("Carbonara"), FoodType = "SkilletNoodles" }}
+                        local args = {{ Bite = 1, Noodletype = "2x Spicy", Action = "Bite", Tool = game:GetService("Players").LocalPlayer.Character:WaitForChild("2x Spicy"), FoodType = "SkilletNoodles" }}
                         game:GetService("ReplicatedStorage"):WaitForChild("NoodlesSkilletEvent"):FireServer(unpack(args))
                     end
                 end)
@@ -2341,7 +2341,7 @@ MiscTab:CreateButton({
         local hrp = char:WaitForChild("HumanoidRootPart")
         hrp.CFrame = CFrame.new(8.23, 2.72, -3.85)
         task.wait(1)
-        local args = {{"Carbonara"}}
+        local args = {{"2x Spicy"}}
         game:GetService("ReplicatedStorage"):WaitForChild("PlaceFoodOrder"):FireServer(unpack(args))
         game.StarterGui:SetCore("SendNotification", { Title = "Steps", Text = "Place Food and collect The Food", Duration = 8 })
     end

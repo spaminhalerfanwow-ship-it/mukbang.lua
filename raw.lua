@@ -1,3 +1,7 @@
+-- hey skidders
+-- if you are looking through the codes and wanted to use them
+-- please ask permission first then you can use it
+-- thank you <3
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -2345,6 +2349,227 @@ MiscTab:CreateButton({
         game:GetService("ReplicatedStorage"):WaitForChild("PlaceFoodOrder"):FireServer(unpack(args))
         game.StarterGui:SetCore("SendNotification", { Title = "Steps", Text = "Place Food and collect The Food", Duration = 8 })
     end
+})
+
+local Section = MiscTab:CreateSection("⭐ All Gamepass Foods")
+
+local Button = MiscTab:CreateButton({
+   Name = "Seafood Boil",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Seafood Boil"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Honey Seafood Boil",
+   Callback = function()
+   local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Honey Seafood Boil"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Spicy Seafood Boil",
+   Callback = function()
+   local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Spicy Seafood Boil"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "2x Spicy",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "2x Spicy"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "2x Spicy Tteokbokki",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "2x Spicy Tteokbokki"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Cookies N Cream Burger",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Cookies N Cream Burger"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Matcha Burger",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Matcha Burger"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Strawberry Burger",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Strawberry Burger"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "King Tentacle",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "King Tentacle"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Spicy King Tentacle",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Spicy King Tentacle"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Salmon Slab",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Salmon Slab"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Tuna Slab",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Tuna Slab"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Yellowtail Slab",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Yellowtail Slab"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Kohada Slab",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Kohada Slab"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Seabass Slab",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Seabass Slab"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Organic Usuzukuri Slab",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Organic Usuzukuri Slab"
+    }
+)
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Flounder Slab",
+   Callback = function()
+
+local Event = game:GetService("ReplicatedStorage").PlaceFoodOrder
+Event:FireServer(
+    {
+        "Flounder Slab"
+    }
+)
+   end,
 })
 
 MiscTab:CreateLabel("ROBLOX: blue25102558")

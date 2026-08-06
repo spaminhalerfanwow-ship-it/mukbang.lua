@@ -1484,4 +1484,4 @@ MiscTab:CreateButton({
 MiscTab:CreateLabel("ROBLOX: blue25102558")
 MiscTab:CreateLabel("YouTube: fourisanaverageguy")
 
-Rayfield:Notify({Title = "Infinite bites loaded!", Content = "All tabs + features ready!", Duration = 5})
+Rayfield:Notify({Title = "Everything is now loaded!", Content = "All tabs + features ready!", Duration = 5})

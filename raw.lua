@@ -42,7 +42,7 @@ MainTab:CreateSection("🍗 Fried Chickens")
 
 Rayfield:Notify({
    Title = "Thanks for executing my script!",
-   Content = "Lowkey tooked me around an hour to make this, but I hope you enjoy :)",
+   Content = "It took me 4 hours to make this, hope you enjoy the script <3",
    Duration = 6.5,
    Image = 4483362458,
 })
@@ -1517,5 +1517,3 @@ MiscTab:CreateSection("🍽️ Platform")
 
 MiscTab:CreateLabel("ROBLOX: blue25102558")
 MiscTab:CreateLabel("YouTube: fourisanaverageguy")
-
-Rayfield:Notify({Title = "Everything is loaded!", Content = "All tabs + features ready!", Duration = 5})

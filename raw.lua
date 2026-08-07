@@ -1292,6 +1292,29 @@ SauceTab:CreateButton({
 })
 
 local MiscTab = Window:CreateTab("❔ Misc", nil)
+MiscTab:CreateSection("❔ Scripts")
+
+MiscTab:CreateButton({
+   Name = "Execute Infinite Yield FE",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   end,
+})
+
+MiscTab:CreateButton({
+   Name = "Execute Sirus",
+   Callback = function()
+      loadstring(game:HttpGet('https://sirius.menu/sirius'))()
+   end,
+})
+
+MiscTab:CreateButton({
+   Name = "Re-execute Script (Rayfield)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/spaminhalerfanwow-ship-it/mukbang.lua/refs/heads/main/raw.lua"))()
+   end,
+})
+
 MiscTab:CreateSection("⭐ Features")
 
 local infBitesEnabled = false
@@ -1481,7 +1504,9 @@ MiscTab:CreateButton({
    end,
 })
 
+MiscTab:CreateSection("🍽️ Platform")
+
 MiscTab:CreateLabel("ROBLOX: blue25102558")
 MiscTab:CreateLabel("YouTube: fourisanaverageguy")
 
-Rayfield:Notify({Title = "Everything is now loaded!", Content = "All tabs + features ready!", Duration = 5})
+Rayfield:Notify({Title = "Everything is loaded!", Content = "All tabs + features ready!", Duration = 5})

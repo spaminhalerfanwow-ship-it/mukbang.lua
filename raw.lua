@@ -44,7 +44,7 @@ Rayfield:Notify({
    Title = "Thanks for executing my script!",
    Content = "Lowkey tooked me around an hour to make this, but I hope you enjoy :)",
    Duration = 6.5,
-   Image = nil,
+   Image = 4483362458,
 })
 
 MainTab:CreateButton({
@@ -1501,6 +1501,15 @@ MiscTab:CreateButton({
    Name = "Gooey Vanilla",
    Callback = function()
       game:GetService("ReplicatedStorage").PlaceFoodOrder:FireServer({"Gooey Vanilla"})
+   end,
+})
+
+MiscTab:CreateSection("💥 Self-destruct")
+
+MiscTab:CreateButton({
+   Name = "Kill Rayfield",
+   Callback = function()
+      Rayfield:Destroy()
    end,
 })
 

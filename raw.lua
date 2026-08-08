@@ -1393,6 +1393,27 @@ MiscTab:CreateButton({
 })
 
 MiscTab:CreateButton({
+   Name = "Flamin Hot Burger",
+   Callback = function()
+      game:GetService("ReplicatedStorage").PlaceFoodOrder:FireServer({"Flamin Hot Burger"})
+   end,
+})
+
+MiscTab:CreateButton({
+   Name = "Takees Burger",
+   Callback = function()
+      game:GetService("ReplicatedStorage").PlaceFoodOrder:FireServer({"Takees Burger"})
+   end,
+})
+
+MiscTab:CreateButton({
+   Name = "Blue Taki Burger",
+   Callback = function()
+      game:GetService("ReplicatedStorage").PlaceFoodOrder:FireServer({"Blue Taki Burger"})
+   end,
+})
+
+MiscTab:CreateButton({
    Name = "Cookies N Cream Burger",
    Callback = function()
       game:GetService("ReplicatedStorage").PlaceFoodOrder:FireServer({"Cookies N Cream Burger"})
